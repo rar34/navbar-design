@@ -1,8 +1,8 @@
-nav ul {
+nav > ul {
     display: flex;
 }
 
-nav ul li{
+nav li{
     list-style: none;
     margin-right: 10px;
     background-color: cadetblue;
@@ -11,8 +11,24 @@ nav ul li{
     
 }
 
+nav li:hover{
+    background-color: gray;
+}
+
 nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+}
+
+/* dropdown menu */
+
+nav .dropdown{
+    display: none;
+    position: absolute;
+    padding-left: 20px;
+}
+
+nav li:hover > .dropdown{
+    display: block;
 }
